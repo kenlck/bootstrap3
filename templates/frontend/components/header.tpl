@@ -37,6 +37,90 @@
 		</nav>
 
 		{* Header *}
+
+		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
+			<div class="innerHeaderWrp">
+				<div class="topHeader">
+					<div class="topSocial">
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/OpenJournalSystems" class="fa fa-facebook" target="_blank"></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/@openjournalsys" class="fa fa-twitter" target="_blank"></a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/+Openjournalsystems" class="fa fa-google-plus" target="_blank"></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/company/openjournalsystems-com" class="fa fa-linkedin" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+					<!--  <div class="socialBread">
+						<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div> -->
+					<div class="topSocial">
+						<ul>
+							<!--   <li><a href="https://www.facebook.com/OpenJournalSystems" class="fa fa-facebook" target="_blank"></a></li>
+				<li><a href="https://twitter.com/@openjournalsys" class="fa fa-twitter"  target="_blank"></a></li>
+				<li><a href="https://plus.google.com/+Openjournalsystems" class="fa fa-google-plus"  target="_blank"></a></li>
+				<li><a href="https://www.linkedin.com/company/openjournalsystems-com" class="fa fa-linkedin"  target="_blank"></a></li> -->
+							<li class="callQuestion">QUESTIONS? CALL:
+								<strong> (602) 527-7080</strong>
+							</li>
+						</ul>
+					</div>
+					{load_menu name="user" id="topMenuRight" ulClass="menu"}
+				</div>
+				<div class="mainNavigation">
+					<div class="navbar-header">
+						<a href="http://ojs3modern12.openjournalsystems.com">
+							<img src="http://ojs3modern12.openjournalsystems.com/public/journals/7/pageHeaderLogoImage_en_US.png" alt="D" class="img-responsive"> </a>
+					</div>
+				</div>
+				<div id="primaryMenuWrp">
+					<ul id="main-navigation" class="nav navbar-nav ">
+						<li class=" ">
+							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja" class="active"> Home </a>
+						</li>
+						<li class="  dropdown ">
+							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about" class=""> About
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="">
+									<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about"> About the Journal </a>
+								</li>
+								<li class="">
+									<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about/submissions"> Submissions </a>
+								</li>
+								<li class="">
+									<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about/editorialTeam"> Editorial Team </a>
+								</li>
+								<li class="">
+									<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about/contact"> Contact </a>
+								</li>
+							</ul>
+						</li>
+						<li class=" ">
+							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/issue/current" class=""> Current </a>
+						</li>
+						<li class=" ">
+							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/issue/archive" class=""> Archives </a>
+						</li>
+						<li class=" ">
+							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/announcement" class=""> Announcements </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- close innerHeaderWrp -->
+			<!-- .pkp_head_wrapper -->
+		</header>
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
 
 			{* User profile, login, etc, navigation menu*}
