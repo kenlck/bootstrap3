@@ -74,7 +74,7 @@
 							</li>
 						</ul>
 					</div>
-					{load_menu name="user" id="topMenuRight" ulClass="menu"}
+					{load_menu name="user" id="topMenuRight" ulClass="menu pull-right"}
 				</div>
 				<div class="mainNavigation">
 					<div class="navbar-header">
