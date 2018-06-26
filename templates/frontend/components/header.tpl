@@ -104,6 +104,7 @@
 		</header>
 
 		<script>
+			{literal}
 			window.onscroll = function() {
 
 				var body = document.body; //IE 'quirks'
@@ -122,6 +123,7 @@
 					}
 				}
 			}
+			{/literal}
 		</script>
 
 		{* Wrapper for page content and sidebars *}
