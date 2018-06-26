@@ -117,29 +117,6 @@
 			<!-- Start Copyright -->
 			<div class="copyright-section">
 				<div class="row">
-					<style type="text/css">
-						footer {
-							background: #444;
-							color: #fff;
-						}
-
-						.footer .bottom-bar {
-							padding: 5px 0;
-						}
-
-						footer img {
-							margin: 5px;
-						}
-
-						#nsf-logo {
-							margin-left: 25px;
-							margin-right: 25px;
-						}
-
-						.cu-engineering-logo {
-							width: 160px;
-						}
-					</style>
 					<div class="bottom-bar">
 						<div class="container text-center ">
 							<div class="row">
