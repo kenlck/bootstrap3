@@ -121,6 +121,10 @@
 			{/literal}
 		</script>
 
+		<div class="custom-banner">
+			<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+		</div>
+
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
 			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
