@@ -96,9 +96,7 @@
 					</div>
 				</div>
 				<div id="primaryMenuWrp">
-					{capture assign="primaryMenu"}
-	-					{load_menu name="primary" id="main-navigation" ulClass="nav navbar-nav"}
-	-				{/capture}
+-					{load_menu name="primary" id="main-navigation" ulClass="nav navbar-nav"}
 				</div>
 			</div>
 			<!-- close innerHeaderWrp -->
