@@ -78,44 +78,27 @@
 				</div>
 				<div class="mainNavigation">
 					<div class="navbar-header">
-						<a href="http://ojs3modern12.openjournalsystems.com">
-							<img src="http://ojs3modern12.openjournalsystems.com/public/journals/7/pageHeaderLogoImage_en_US.png" alt="D" class="img-responsive"> </a>
+						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
+-							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+-								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
+-							</a>
+-						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
+-							<a href="{$homeUrl}" class="navbar-brand">{$displayPageHeaderTitle}</a>
+-						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
+-							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+-								<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle.altText|escape}">
+-							</a>
+-						{else}
+-							<a href="{$homeUrl}" class="navbar-brand">
+-								<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
+-							</a>
+-						{/if}
 					</div>
 				</div>
 				<div id="primaryMenuWrp">
-					<ul id="main-navigation" class="nav navbar-nav ">
-						<li class=" ">
-							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja" class="active"> Home </a>
-						</li>
-						<li class="  dropdown ">
-							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about" class=""> About
-								<i class="fa fa-angle-down" aria-hidden="true"></i>
-							</a>
-							<ul class="dropdown-menu">
-								<li class="">
-									<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about"> About the Journal </a>
-								</li>
-								<li class="">
-									<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about/submissions"> Submissions </a>
-								</li>
-								<li class="">
-									<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about/editorialTeam"> Editorial Team </a>
-								</li>
-								<li class="">
-									<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/about/contact"> Contact </a>
-								</li>
-							</ul>
-						</li>
-						<li class=" ">
-							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/issue/current" class=""> Current </a>
-						</li>
-						<li class=" ">
-							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/issue/archive" class=""> Archives </a>
-						</li>
-						<li class=" ">
-							<a href="http://ojs3modern12.openjournalsystems.com/index.php/dja/announcement" class=""> Announcements </a>
-						</li>
-					</ul>
+					{capture assign="primaryMenu"}
+	-					{load_menu name="primary" id="main-navigation" ulClass="nav navbar-nav"}
+	-				{/capture}
 				</div>
 			</div>
 			<!-- close innerHeaderWrp -->
