@@ -145,26 +145,6 @@
 		</div>
 		<!-- .container -->
 	</footer>
-	<footer class="footer" role="contentinfo">
-
-		<div class="container">
-			<div class="row">
-				{if $pageFooter}
-				<div class="col-md-10">
-					{$pageFooter}
-				</div>
-				{/if}
-
-				<div class="col-md-2" role="complementary">
-					Powered by
-					<a href="http://www.ricodes.com">
-						Ricsources Sdn Bhd
-					</a>
-				</div>
-
-			</div> <!-- .row -->
-		</div><!-- .container -->
-	</footer>
 </div><!-- pkp_structure_page -->
 
 {load_script context="frontend" scripts=$scripts}
