@@ -10,7 +10,7 @@
  * @uses $isFullWidth bool Should this page be displayed without sidebars? This
  *       represents a page-level override, and doesn't indicate whether or not
  *       sidebars have been configured for thesite.
- **}
+ *}
 
 	</main>
 
@@ -24,6 +24,150 @@
 		{/if}
 	{/if}
 	</div><!-- pkp_structure_content -->
+
+	<footer id="footer" class="footer" role="contentinfo">
+		<div class="container">
+			<div class="row footer-widgets">
+				<!-- Start Contact & Follow Widget -->
+				<div class="col-md-4 col-xs-12">
+					<div class="footer-widget contact-widget">
+						<h4>
+							<a href="" alt="Footer Logo" ss="">
+								<img src="http://ojs3modern12.openjournalsystems.com/public/journals/7/pageHeaderLogoImage_en_US.png" alt="D"
+									class="img-responsive"> </a>
+						</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices lorem et lacinia consequat. Donec tristique
+							finibus iaculis. Nulla sit amet justo commodo, pellentesque elit eget, varius enim. Sed enim odio, venenatis
+							a ultricies vel, ullamcorper quis justo. Quisque porttitor risus in vehicula vestibulum. In in eros tempor, blandit
+							erat eu, suscipit mauris. Aliquam facilisis, eros eget fermentum efficitur, justo metus varius mi, nec aliquet
+							augue leo at arcu. </p>
+						<ul>
+							<li>
+								<span class="fa fa-">ISSN</span> 2466-3352 (Online)</li>
+						</ul>
+					</div>
+				</div>
+				<!-- .col-md-6 -->
+				<!-- End Contact Widget -->
+				<div class="footer-widget col-md-3 col-xs-12 social-widget">
+					<h4>Contact
+						<span class="head-line"></span>
+					</h4>
+					<p> </p>
+					<ul>
+						<li>
+							<span class="fa fa-envelope"> </span> Email: info@openjournalsystems.com</li>
+						<li>
+							<span class="fa fa-phone"> </span> Phone: 602-527-7080</li>
+						<li>
+							<span class="fa fa-globe"> </span> Website: www.openjournalsystems.com</li>
+						<li>
+							<span class="fa fa-map-marker"> </span> Address: 13835 N. Tatum Blvd #9-319, Phoenix, AZ, USA</li>
+					</ul>
+					<ul class="social-icons">
+						<li>
+							<a class="facebook" href="https://www.facebook.com/OpenJournalSystems" target="_blank">
+								<span class="fa fa-facebook"></span>
+							</a>
+						</li>
+						<li>
+							<a class="twitter" href="https://twitter.com/@openjournalsys" target="_blank">
+								<span class="fa fa-twitter"></span>
+							</a>
+						</li>
+						<li>
+							<a class="google" href="https://plus.google.com/+Openjournalsystems" target="_blank">
+								<span class="fa fa-google-plus"></span>
+							</a>
+						</li>
+						<li>
+							<a class="linkdin" href="https://www.linkedin.com/company/openjournalsystems-com" target="_blank">
+								<span class="fa fa-linkedin"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-widget col-md-2 col-xs-12 social-widget">
+					<h4>Journals
+						<span class="head-line"></span>
+					</h4>
+					<ul>
+						<li>
+							<span class="fa fa-dot-circle-o"> </span>
+							<a title="Information For Readers" href="/index.php/dja">Demo Journal A</a>
+						</li>
+						<li>
+							<span class="fa fa-dot-circle-o"> </span>
+							<a title="Information For Readers" href="/index.php/djb">Demo Journal B</a>
+						</li>
+						<li>
+							<span class="fa fa-dot-circle-o"> </span>
+							<a title="Information For Readers" href="/index.php/djc">Demo Journal C</a>
+						</li>
+						<li>
+							<span class="fa fa-dot-circle-o"> </span>
+							<a title="Information For Readers" href="/index.php/djd">Demo Journal D</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- .col-md-3 -->
+			</div>
+			<!-- .row -->
+			<!-- Start Copyright -->
+			<div class="copyright-section">
+				<div class="row">
+					<style type="text/css">
+						footer {
+							background: #444;
+							color: #fff;
+						}
+
+						.footer .bottom-bar {
+							padding: 5px 0;
+						}
+
+						footer img {
+							margin: 5px;
+						}
+
+						#nsf-logo {
+							margin-left: 25px;
+							margin-right: 25px;
+						}
+
+						.cu-engineering-logo {
+							width: 160px;
+						}
+					</style>
+					<div class="bottom-bar">
+						<div class="container text-center ">
+							<div class="row">
+								<a href="/">Home</a> |
+								<a href="">FAQs</a> |
+								<a href="">Policies</a> |
+								<a href="">Contact Us</a> |
+								<a href="">Sponsors</a> |
+								<a href="">Sitemap</a>
+								<div> Use of this website constitutes acceptance of our
+									<a href="">Terms of Use</a> and
+									<a href="">Privacy Policy</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small"> OJS Hosting, Support, and Customization by:
+									<a href="http://OpenJournalSystems.com">OpenJournalSystems.com</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- .row -->
+			</div>
+			<!-- End Copyright -->
+		</div>
+		<!-- .container -->
+	</footer>
 	<footer class="footer" role="contentinfo">
 
 		<div class="container">
