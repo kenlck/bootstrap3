@@ -111,28 +111,7 @@
 					</ul>
 				</div>
 				<!-- Start Twitter Widget -->
-				<div class="col-md-3 col-xs-12">
-					<div class="footer-widget twitter-widget">
-						<h4>Twitter Feed
-							<span class="head-line"></span>
-						</h4>
-						<iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-timeline twitter-timeline-rendered"
-							style="position: static; visibility: visible; display: inline-block; width: 520px; height: 250px; padding: 0px; border: none; max-width: 100%; min-width: 180px; margin-top: 0px; margin-bottom: 0px; min-height: 200px;"
-							data-widget-id="494122051230121986" title="Twitter Timeline"></iframe>
-						<script>
-							! function (d, s, id) {
-								var js, fjs = d.getElementsByTagName(s)[0],
-									p = /^http:/.test(d.location) ? 'http' : 'https';
-								if (!d.getElementById(id)) {
-									js = d.createElement(s);
-									js.id = id;
-									js.src = p + "://platform.twitter.com/widgets.js";
-									fjs.parentNode.insertBefore(js, fjs);
-								}
-							}(document, "script", "twitter-wjs");
-						</script>
-					</div>
-				</div>
+
 				<!-- .col-md-3 -->
 			</div>
 			<!-- .row -->
