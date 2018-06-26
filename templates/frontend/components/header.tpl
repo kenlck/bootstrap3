@@ -19,7 +19,7 @@
 {/if}
 
 <!DOCTYPE html>
-<html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
+<html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}" class>
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
 {include file="core:frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}">
@@ -79,31 +79,50 @@
 				<div class="mainNavigation">
 					<div class="navbar-header">
 						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
--							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
--								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
--							</a>
--						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
--							<a href="{$homeUrl}" class="navbar-brand">{$displayPageHeaderTitle}</a>
--						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
--							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
--								<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle.altText|escape}">
--							</a>
--						{else}
--							<a href="{$homeUrl}" class="navbar-brand">
--								<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
--							</a>
--						{/if}
+							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
+							</a>
+						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
+							<a href="{$homeUrl}" class="navbar-brand">{$displayPageHeaderTitle}</a>
+						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
+							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+								<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle.altText|escape}">
+							</a>
+						{else}
+							<a href="{$homeUrl}" class="navbar-brand">
+								<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
+							</a>
+						{/if}
 					</div>
 				</div>
 				<div id="primaryMenuWrp">
--					{load_menu name="primary" id="main-navigation" ulClass="nav navbar-nav"}
+					{load_menu name="primary" id="main-navigation" ulClass="nav navbar-nav"}
 				</div>
 			</div>
 			<!-- close innerHeaderWrp -->
 			<!-- .pkp_head_wrapper -->
 		</header>
 
+		<script>
+			window.onscroll = function() {
 
+				var body = document.body; //IE 'quirks'
+				var document = document.documentElement; //IE with doctype
+				document = (document.clientHeight) ? document : body;
+
+				if (document.scrollTop == 0) {
+					var el = document.getElementsByTagName('html');
+					if(el) {
+						el.className = "";
+					}
+				} else {
+					var el = document.getElementsByTagName('html');
+					if(el) {
+						el.className = "scrollNow";
+					}
+				}
+			}
+		</script>
 
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
