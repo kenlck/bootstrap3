@@ -106,12 +106,7 @@
 		<script>
 			{literal}
 			window.onscroll = function() {
-
-				var body = document.body; //IE 'quirks'
-				var document = document.documentElement; //IE with doctype
-				document = (document.clientHeight) ? document : body;
-
-				if (document.scrollTop == 0) {
+				if (document.documentElement.scrollTop == 0) {
 					var el = document.getElementsByTagName('html')[0];
 					if(el) {
 						el.setAttribute( 'class', '' );
