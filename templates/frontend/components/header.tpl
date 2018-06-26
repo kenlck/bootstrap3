@@ -111,14 +111,14 @@
 				document = (document.clientHeight) ? document : body;
 
 				if (document.scrollTop == 0) {
-					var el = document.getElementsByTagName('html');
+					var el = document.getElementsByTagName('html')[0];
 					if(el) {
-						el.className = "";
+						el.setAttribute( 'class', '' );
 					}
 				} else {
-					var el = document.getElementsByTagName('html');
+					var el = document.getElementsByTagName('html')[0];
 					if(el) {
-						el.className = "scrollNow";
+						el.setAttribute( 'class', 'scrollNow' );
 					}
 				}
 			}
