@@ -68,7 +68,7 @@
 				<li><a href="https://plus.google.com/+bbwpublisher" class="fa fa-google-plus"  target="_blank"></a></li>
 				<li><a href="https://www.linkedin.com/company/bbwpublisher" class="fa fa-linkedin"  target="_blank"></a></li> -->
 							<li class="callQuestion">QUESTIONS? CALL:
-								<strong> (603) 5022-3176<</strong>
+								<strong> (603) 5022-3176</strong>
 							</li>
 						</ul>
 					</div>

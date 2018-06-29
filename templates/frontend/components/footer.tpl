@@ -35,11 +35,11 @@
 									class="img-responsive"> </a>
 						</h4>
 						<h4>Publishing Office
-						<	span class="head-line"></span>
+						<span class="head-line"></span>
 					  </h4>
 						<p>Level 10, 50 Clarence Street Sydney, NSW 2000 Australia Tel: (+61)434999068</p>
 						<h4>Editorial Office
-						<	span class="head-line"></span>
+						<span class="head-line"></span>
 					  </h4>
 						<p>Suites B-5-7. Skypark@One City, Jalan USJ 25/1, 47650 Subang Jaya, Selangor, Malaysia Tel: (+603)50223176</p>
 						<ul>
