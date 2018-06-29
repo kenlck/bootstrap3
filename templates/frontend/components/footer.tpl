@@ -28,18 +28,18 @@
 			<div class="row footer-widgets">
 				<!-- Start Contact & Follow Widget -->
 				<div class="col-md-4 col-xs-12">
-					<div class="footer-widget contact-widget">
+					<div class="footer-widget">
 						<h4>
 							<a href="" alt="Footer Logo" ss="">
 								<img src="http://ojs3modern12.openjournalsystems.com/public/journals/7/pageHeaderLogoImage_en_US.png" alt="D"
 									class="img-responsive"> </a>
 						</h4>
 						<h4>Publishing Office
-						<span class="head-line"></span>
+							<span class="head-line"></span>
 					  </h4>
 						<p>Level 10, 50 Clarence Street Sydney, NSW 2000 Australia Tel: (+61)434999068</p>
 						<h4>Editorial Office
-						<span class="head-line"></span>
+							<span class="head-line"></span>
 					  </h4>
 						<p>Suites B-5-7. Skypark@One City, Jalan USJ 25/1, 47650 Subang Jaya, Selangor, Malaysia Tel: (+603)50223176</p>
 						<ul>
