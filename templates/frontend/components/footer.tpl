@@ -34,11 +34,11 @@
 								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
 							</a>
 						</h4>
-						<h4 style="padding-bottom: 8px;">Publishing Office
+						<h4 style="padding-bottom: 8px; margin-bottom: 20px;">Publishing Office
 							<span class="head-line"></span>
 					  </h4>
 						<p>Level 10, 50 Clarence Street Sydney, NSW 2000 Australia Tel: (+61)434999068</p>
-						<h4 style="padding-bottom: 8px;">Editorial Office
+						<h4 style="padding-bottom: 8px; margin-bottom: 20px;">Editorial Office
 							<span class="head-line"></span>
 					  </h4>
 						<p>Suites B-5-7. Skypark@One City, Jalan USJ 25/1, 47650 Subang Jaya, Selangor, Malaysia Tel: (+603)50223176</p>
