@@ -1,9 +1,7 @@
 {**
  * lib/pkp/templates/frontend/components/header.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University Library
- * Copyright (c) 2003-2017 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Customise and Support by Ricodes.com
  *
  * @brief Common frontend site header.
  *
@@ -44,16 +42,16 @@
 					<div class="topSocial">
 						<ul>
 							<li>
-								<a href="https://www.facebook.com/OpenJournalSystems" class="fa fa-facebook" target="_blank"></a>
+								<a href="https://www.facebook.com/bbwpublisher" class="fa fa-facebook" target="_blank"></a>
 							</li>
 							<li>
-								<a href="https://twitter.com/@openjournalsys" class="fa fa-twitter" target="_blank"></a>
+								<a href="https://twitter.com/@bbwpublisher" class="fa fa-twitter" target="_blank"></a>
 							</li>
 							<li>
-								<a href="https://plus.google.com/+Openjournalsystems" class="fa fa-google-plus" target="_blank"></a>
+								<a href="https://plus.google.com/+bbwpublisher" class="fa fa-google-plus" target="_blank"></a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/company/openjournalsystems-com" class="fa fa-linkedin" target="_blank"></a>
+								<a href="https://www.linkedin.com/company/bbwpublisher" class="fa fa-linkedin" target="_blank"></a>
 							</li>
 						</ul>
 					</div>
@@ -65,12 +63,12 @@
 					</div> -->
 					<div class="topSocial">
 						<ul>
-							<!--   <li><a href="https://www.facebook.com/OpenJournalSystems" class="fa fa-facebook" target="_blank"></a></li>
-				<li><a href="https://twitter.com/@openjournalsys" class="fa fa-twitter"  target="_blank"></a></li>
-				<li><a href="https://plus.google.com/+Openjournalsystems" class="fa fa-google-plus"  target="_blank"></a></li>
-				<li><a href="https://www.linkedin.com/company/openjournalsystems-com" class="fa fa-linkedin"  target="_blank"></a></li> -->
+							<!--   <li><a href="https://www.facebook.com/bbwpublisher" class="fa fa-facebook" target="_blank"></a></li>
+				<li><a href="https://twitter.com/@bbwpublisher" class="fa fa-twitter"  target="_blank"></a></li>
+				<li><a href="https://plus.google.com/+bbwpublisher" class="fa fa-google-plus"  target="_blank"></a></li>
+				<li><a href="https://www.linkedin.com/company/bbwpublisher" class="fa fa-linkedin"  target="_blank"></a></li> -->
 							<li class="callQuestion">QUESTIONS? CALL:
-								<strong> (602) 527-7080</strong>
+								<strong> (603) 5022-3176<</strong>
 							</li>
 						</ul>
 					</div>

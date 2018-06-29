@@ -1,9 +1,7 @@
 {**
  * templates/frontend/components/footer.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University Library
- * Copyright (c) 2003-2017 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Customise and Support by Ricodes.com
  *
  * @brief Common site frontend footer.
  *
@@ -36,14 +34,17 @@
 								<img src="http://ojs3modern12.openjournalsystems.com/public/journals/7/pageHeaderLogoImage_en_US.png" alt="D"
 									class="img-responsive"> </a>
 						</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultrices lorem et lacinia consequat. Donec tristique
-							finibus iaculis. Nulla sit amet justo commodo, pellentesque elit eget, varius enim. Sed enim odio, venenatis
-							a ultricies vel, ullamcorper quis justo. Quisque porttitor risus in vehicula vestibulum. In in eros tempor, blandit
-							erat eu, suscipit mauris. Aliquam facilisis, eros eget fermentum efficitur, justo metus varius mi, nec aliquet
-							augue leo at arcu. </p>
+						<h4>Publishing Office
+						<	span class="head-line"></span>
+					  </h4>
+						<p>Level 10, 50 Clarence Street Sydney, NSW 2000 Australia Tel: (+61)434999068</p>
+						<h4>Editorial Office
+						<	span class="head-line"></span>
+					  </h4>
+						<p>Suites B-5-7. Skypark@One City, Jalan USJ 25/1, 47650 Subang Jaya, Selangor, Malaysia Tel: (+603)50223176</p>
 						<ul>
 							<li>
-								<span class="fa fa-">ISSN</span> 2466-3352 (Online)</li>
+								<span class="fa fa-">ISSN</span> 0000-0000</li>
 						</ul>
 					</div>
 				</div>
@@ -56,57 +57,62 @@
 					<p> </p>
 					<ul>
 						<li>
-							<span class="fa fa-envelope"> </span> Email: info@openjournalsystems.com</li>
+							<span class="fa fa-envelope"> </span> Email: info@bbwpublisher.com</li>
 						<li>
-							<span class="fa fa-phone"> </span> Phone: 602-527-7080</li>
+							<span class="fa fa-phone"> </span> Phone: 603-5022-3176</li>
 						<li>
-							<span class="fa fa-globe"> </span> Website: www.openjournalsystems.com</li>
+							<span class="fa fa-globe"> </span> Website: www.bbwpublisher.com</li>
 						<li>
-							<span class="fa fa-map-marker"> </span> Address: 13835 N. Tatum Blvd #9-319, Phoenix, AZ, USA</li>
+							<span class="fa fa-map-marker"> </span> Address: Suites B-5-7, Skypark @ One City,
+							Jalan USJ 25/1, 47650 Subang Jaya, Selangor, Malaysia</li>
 					</ul>
 					<ul class="social-icons">
 						<li>
-							<a class="facebook" href="https://www.facebook.com/OpenJournalSystems" target="_blank">
+							<a class="facebook" href="https://www.facebook.com/bbwpublisher/" target="_blank">
 								<span class="fa fa-facebook"></span>
 							</a>
 						</li>
 						<li>
-							<a class="twitter" href="https://twitter.com/@openjournalsys" target="_blank">
+							<a class="twitter" href="https://twitter.com/@bbwpublisher" target="_blank">
 								<span class="fa fa-twitter"></span>
 							</a>
 						</li>
 						<li>
-							<a class="google" href="https://plus.google.com/+Openjournalsystems" target="_blank">
+							<a class="google" href="https://plus.google.com/+bbwpublisher" target="_blank">
 								<span class="fa fa-google-plus"></span>
 							</a>
 						</li>
 						<li>
-							<a class="linkdin" href="https://www.linkedin.com/company/openjournalsystems-com" target="_blank">
+							<a class="linkdin" href="https://www.linkedin.com/company/bbwpublisher" target="_blank">
 								<span class="fa fa-linkedin"></span>
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="footer-widget col-md-2 col-xs-12 social-widget">
-					<h4>Journals
+					<h4>Browse By Speciaty
 						<span class="head-line"></span>
 					</h4>
 					<ul>
 						<li>
 							<span class="fa fa-dot-circle-o"> </span>
-							<a title="Information For Readers" href="/index.php/dja">Demo Journal A</a>
+							<a title="Information For Readers" href="/index.php/dja">Architecture</a>
 						</li>
 						<li>
 							<span class="fa fa-dot-circle-o"> </span>
-							<a title="Information For Readers" href="/index.php/djb">Demo Journal B</a>
+							<a title="Information For Readers" href="/index.php/djb">Medicine and Biological Science</a>
 						</li>
 						<li>
 							<span class="fa fa-dot-circle-o"> </span>
-							<a title="Information For Readers" href="/index.php/djc">Demo Journal C</a>
+							<a title="Information For Readers" href="/index.php/djc">Engineering</a>
 						</li>
 						<li>
 							<span class="fa fa-dot-circle-o"> </span>
-							<a title="Information For Readers" href="/index.php/djd">Demo Journal D</a>
+							<a title="Information For Readers" href="/index.php/djd">Education</a>
+						</li>
+						<li>
+							<span class="fa fa-dot-circle-o"> </span>
+							<a title="Information For Readers" href="/index.php/djd">Business and Economics</a>
 						</li>
 					</ul>
 				</div>
@@ -132,8 +138,8 @@
 								</div>
 							</div>
 							<div class="row">
-								<div class="small"> OJS Hosting, Support, and Customization by:
-									<a href="http://OpenJournalSystems.com">OpenJournalSystems.com</a>
+								<div class="small">Bio-Byword Scientific Publishing Pty Ltd
+									<a href="http://www.bbwpublisher.com/">Bio-BYWORD</a>
 								</div>
 							</div>
 						</div>
