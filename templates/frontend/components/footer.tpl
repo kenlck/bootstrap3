@@ -31,8 +31,8 @@
 					<div class="footer-widget">
 						<h4>
 							<a href="" alt="Footer Logo" ss="">
-								<img src="http://ojs3modern12.openjournalsystems.com/public/journals/7/pageHeaderLogoImage_en_US.png" alt="D"
-									class="img-responsive"> </a>
+								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
+							</a>
 						</h4>
 						<h4>Publishing Office
 							<span class="head-line"></span>
