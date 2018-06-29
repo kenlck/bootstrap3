@@ -28,17 +28,17 @@
 			<div class="row footer-widgets">
 				<!-- Start Contact & Follow Widget -->
 				<div class="col-md-4 col-xs-12">
-					<div class="footer-widget">
+					<div class="footer-widget contact-widget">
 						<h4>
 							<a href="" alt="Footer Logo" ss="">
 								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
 							</a>
 						</h4>
-						<h4>Publishing Office
+						<h4 style="padding-bottom: 8px;">Publishing Office
 							<span class="head-line"></span>
 					  </h4>
 						<p>Level 10, 50 Clarence Street Sydney, NSW 2000 Australia Tel: (+61)434999068</p>
-						<h4>Editorial Office
+						<h4 style="padding-bottom: 8px;">Editorial Office
 							<span class="head-line"></span>
 					  </h4>
 						<p>Suites B-5-7. Skypark@One City, Jalan USJ 25/1, 47650 Subang Jaya, Selangor, Malaysia Tel: (+603)50223176</p>
