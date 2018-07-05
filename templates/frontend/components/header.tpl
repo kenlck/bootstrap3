@@ -119,9 +119,31 @@
 			{/literal}
 		</script>
 
-		<div class="custom-banner">
-			<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/BBW+Background-01.png" alt="{$homepageImageAltText|escape}">
-		</div>
+		{if $pageTitle eq "common.openJournalSystems"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/main.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $pageTitle eq "Archives"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $pageTitle eq "about.aboutContext"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/about.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $pageTitle eq "about.submissions"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/about.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $pageTitle eq "about.contact"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/about.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{else}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{/if}
 
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
