@@ -49,6 +49,7 @@ class BootstrapThreeThemePlugin extends ThemePlugin {
 		));
 
 		$this->addStyle('bootstrap', 'styles/bootstrap.less');
+		$this->addStyle('fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css', array('baseUrl' => ''));
 
 		$locale = AppLocale::getLocale();
 		if (AppLocale::getLocaleDirection($locale) === 'rtl') {
