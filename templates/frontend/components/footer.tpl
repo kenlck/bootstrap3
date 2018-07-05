@@ -25,26 +25,11 @@
 	{/if}
 	</div><!-- pkp_structure_content -->
 
-	<footer class="footer" role="contentinfo">
+	{if $pageFooter}
 
-		<div class="container">
+		{$pageFooter}
 
-			<div class="row">
-				{if $pageFooter}
-				<div class="col-md-10">
-					{$pageFooter}
-				</div>
-				{/if}
-
-				<div class="col-md-2" role="complementary">
-					<a href="{$pkpLink}">
-						<img class="img-responsive" alt="{translate key="common.publicKnowledgeProject"}" src="{$baseUrl}/{$brandImage}">
-					</a>
-				</div>
-
-			</div> <!-- .row -->
-		</div><!-- .container -->
-	</footer>
+	{/if}
 </div><!-- pkp_structure_page -->
 
 {load_script context="frontend" scripts=$scripts}
