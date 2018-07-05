@@ -1,9 +1,7 @@
 {**
  * lib/pkp/templates/frontend/components/header.tpl
  *
- * Copyright (c) 2014-2017 Simon Fraser University Library
- * Copyright (c) 2003-2017 John Willinsky
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Customise and Support by Ricodes.com
  *
  * @brief Common frontend site header.
  *
@@ -19,8 +17,8 @@
 {/if}
 
 <!DOCTYPE html>
-<html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}">
-{if !$pageTitleTranslated}{translate|assign:"pageTitleTranslated" key=$pageTitle}{/if}
+<html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}" class>
+{if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
 {include file="core:frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}">
 	<div class="pkp_structure_page">
@@ -37,41 +35,47 @@
 		</nav>
 
 		{* Header *}
+
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
-
-			{* User profile, login, etc, navigation menu*}
-			<div class="container-fluid">
-				<div class="row">
-					<nav aria-label="{translate|escape key="common.navigation.user"}">
-						{load_menu name="user" id="navigationUser" ulClass="nav nav-pills tab-list pull-right"}
-					</nav>
-				</div><!-- .row -->
-			</div><!-- .container-fluid -->
-
-			<div class="container-fluid">
-
-				<div class="navbar-header">
-
-					{* Mobile hamburger menu *}
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-
-					{* Logo or site title. Only use <h1> heading on the homepage.
-					   Otherwise that should go to the page title. *}
-					{if $requestedOp == 'index'}
-						<h1 class="site-name">
-					{else}
-						<div class="site-name">
-					{/if}
-						{if $currentJournal && $multipleContexts}
-							{url|assign:"homeUrl" journal="index" router=$smarty.const.ROUTE_PAGE}
-						{else}
-							{url|assign:"homeUrl" page="index" router=$smarty.const.ROUTE_PAGE}
-						{/if}
+			<div class="innerHeaderWrp">
+				<div class="topHeader">
+					<div class="topSocial">
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/bbwpublisher" class="fa fa-facebook" target="_blank"></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/@bbwpublisher" class="fa fa-twitter" target="_blank"></a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/+bbwpublisher" class="fa fa-google-plus" target="_blank"></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/company/bbwpublisher" class="fa fa-linkedin" target="_blank"></a>
+							</li>
+						</ul>
+					</div>
+					<!--  <div class="socialBread">
+						<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					</div> -->
+					<div class="topSocial">
+						<ul>
+							<!--   <li><a href="https://www.facebook.com/bbwpublisher" class="fa fa-facebook" target="_blank"></a></li>
+				<li><a href="https://twitter.com/@bbwpublisher" class="fa fa-twitter"  target="_blank"></a></li>
+				<li><a href="https://plus.google.com/+bbwpublisher" class="fa fa-google-plus"  target="_blank"></a></li>
+				<li><a href="https://www.linkedin.com/company/bbwpublisher" class="fa fa-linkedin"  target="_blank"></a></li> -->
+							<li class="callQuestion">QUESTIONS? CALL:
+								<strong> (603) 5022-3176</strong>
+							</li>
+						</ul>
+					</div>
+					{load_menu name="user" id="topMenuRight" ulClass="menu pull-right"}
+				</div>
+				<div class="mainNavigation">
+					<div class="navbar-header">
 						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
 							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
 								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
@@ -87,29 +91,37 @@
 								<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
 							</a>
 						{/if}
-					{if $requestedOp == 'index'}
-						</h1>
-					{else}
-						</div>
-					{/if}
-
+					</div>
 				</div>
-
-				{* Primary site navigation *}
-				<nav id="nav-menu" class="navbar-collapse collapse" aria-label="{translate|escape key="common.navigation.site"}">
-					{* Primary navigation menu for current application *}
+				<div id="primaryMenuWrp">
 					{load_menu name="primary" id="main-navigation" ulClass="nav navbar-nav"}
+				</div>
+			</div>
+			<!-- close innerHeaderWrp -->
+			<!-- .pkp_head_wrapper -->
+		</header>
 
-					{* Search form *}
-					{if !$noContextsConfigured}
-						<div class="pull-md-right">
-							{include file="frontend/components/searchForm_simple.tpl"}
-						</div>
-					{/if}
-				</nav>
+		<script>
+			{literal}
+			window.onscroll = function() {
+				if (document.documentElement.scrollTop == 0) {
+					var el = document.getElementsByTagName('html')[0];
+					if(el) {
+						el.setAttribute( 'class', '' );
+					}
+				} else {
+					var el = document.getElementsByTagName('html')[0];
+					if(el) {
+						el.setAttribute( 'class', 'scrollNow' );
+					}
+				}
+			}
+			{/literal}
+		</script>
 
-			</div><!-- .pkp_head_wrapper -->
-		</header><!-- .pkp_structure_head -->
+		<div class="custom-banner">
+			<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/BBW+Background-01.png" alt="{$homepageImageAltText|escape}">
+		</div>
 
 		{* Wrapper for page content and sidebars *}
 		<div class="pkp_structure_content container">
