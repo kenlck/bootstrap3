@@ -119,7 +119,7 @@
 			{/literal}
 		</script>
 
-		{if $pageTitle eq "common.openJournalSystems"}
+		{if $pageTitle eq "common.openJournalSystems" && $homepageImage.uploadName|escape:"url"}
 			<div class="custom-banner">
 				<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 			</div>
@@ -139,6 +139,14 @@
 			<div class="custom-banner">
 				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/about.png" alt="{$homepageImageAltText|escape}">
 			</div>
+		{elseif $currentUrl eq "http://206.189.90.227"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/mainSite.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $currentUrl eq "http://206.189.90.227/index"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/mainSite.png" alt="{$homepageImageAltText|escape}">
+			</div>
 		{else}
 			<div class="custom-banner">
 				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
@@ -146,5 +154,13 @@
 		{/if}
 
 		{* Wrapper for page content and sidebars *}
-		<div class="pkp_structure_content container">
-			<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
+		{if $currentUrl eq "http://206.189.90.227/index"}
+			<div class="pkp_structure_content container">
+				<main class="pkp_structure_main col-xs-12 col-sm-12 col-md-12" role="main">
+		{elseif $currentUrl eq "http://206.189.90.227"}
+			<div class="pkp_structure_content container">
+				<main class="pkp_structure_main col-xs-12 col-sm-12 col-md-12" role="main">
+		{else}
+			<div class="pkp_structure_content container">
+				<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
+		{/if}
