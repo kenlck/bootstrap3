@@ -19,7 +19,7 @@
 <!DOCTYPE html>
 <html lang="{$currentLocale|replace:"_":"-"}" xml:lang="{$currentLocale|replace:"_":"-"}" class>
 {if !$pageTitleTranslated}{capture assign="pageTitleTranslated"}{translate key=$pageTitle}{/capture}{/if}
-{include file="core:frontend/components/headerHead.tpl"}
+{include file="frontend/components/headerHead.tpl"}
 <body class="pkp_page_{$requestedPage|escape|default:"index"} pkp_op_{$requestedOp|escape|default:"index"}{if $showingLogo} has_site_logo{/if}">
 	<div class="pkp_structure_page">
 
@@ -125,7 +125,7 @@
 			</div>
 		{elseif $pageTitle eq "Archives"}
 			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/archives.png" alt="{$homepageImageAltText|escape}">
 			</div>
 		{elseif $pageTitle eq "about.aboutContext"}
 			<div class="custom-banner">
@@ -133,11 +133,19 @@
 			</div>
 		{elseif $pageTitle eq "about.submissions"}
 			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/about.png" alt="{$homepageImageAltText|escape}">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/submissions.png" alt="{$homepageImageAltText|escape}">
 			</div>
 		{elseif $pageTitle eq "about.contact"}
 			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/about.png" alt="{$homepageImageAltText|escape}">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/contact.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $pageTitle eq "about.editorialTeam"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/editorial.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $pageTitle eq "announcement.announcements"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/announcements.png" alt="{$homepageImageAltText|escape}">
 			</div>
 		{elseif $currentUrl eq "http://206.189.90.227"}
 			<div class="custom-banner">
