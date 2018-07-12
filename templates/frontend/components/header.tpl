@@ -119,47 +119,10 @@
 			{/literal}
 		</script>
 
-		{if $pageTitle eq "common.openJournalSystems" && $homepageImage.uploadName|escape:"url"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
-			</div>
-		{elseif $pageTitle eq "Archives"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/archives.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{elseif $pageTitle eq "about.aboutContext"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/about.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{elseif $pageTitle eq "about.submissions"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/submissions.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{elseif $pageTitle eq "about.contact"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/contact.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{elseif $pageTitle eq "about.editorialTeam"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/editorial.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{elseif $pageTitle eq "announcement.announcements"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/announcements.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{elseif $currentUrl eq "http://206.189.90.227"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/mainSite.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{elseif $currentUrl eq "http://206.189.90.227/index"}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/mainSite.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{else}
-			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
-			</div>
-		{/if}
+		<div class="custom-banner">
+			<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+		</div>
+
 
 		{* Wrapper for page content and sidebars *}
 		{if $currentUrl eq "http://206.189.90.227/index"}
