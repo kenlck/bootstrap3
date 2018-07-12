@@ -122,7 +122,23 @@
 		<div class="custom-banner">
 			<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 		</div>
-
+		{if $pageTitle eq "common.openJournalSystems" && $homepageImage.uploadName|escape:"url"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $currentUrl eq "http://206.189.90.227"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/mainSite.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{elseif $currentUrl eq "http://206.189.90.227/index"}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/mainSite.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{else}
+			<div class="custom-banner">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
+			</div>
+		{/if}
 
 		{* Wrapper for page content and sidebars *}
 		{if $currentUrl eq "http://206.189.90.227/index"}
