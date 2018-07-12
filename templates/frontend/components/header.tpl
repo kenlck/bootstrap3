@@ -119,10 +119,7 @@
 			{/literal}
 		</script>
 
-		<div class="custom-banner">
-			<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
-		</div>
-		{if $pageTitle eq "common.openJournalSystems" && $homepageImage.uploadName|escape:"url"}
+		{if $homepageImage.uploadName|escape:"url"}
 			<div class="custom-banner">
 				<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
 			</div>
@@ -149,5 +146,5 @@
 				<main class="pkp_structure_main col-xs-12 col-sm-12 col-md-12" role="main">
 		{else}
 			<div class="pkp_structure_content container">
-				<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-10" role="main">
+				<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-9" role="main">
 		{/if}
