@@ -67,8 +67,8 @@
 				<li><a href="https://twitter.com/@bbwpublisher" class="fa fa-twitter"  target="_blank"></a></li>
 				<li><a href="https://plus.google.com/+bbwpublisher" class="fa fa-google-plus"  target="_blank"></a></li>
 				<li><a href="https://www.linkedin.com/company/bbwpublisher" class="fa fa-linkedin"  target="_blank"></a></li> -->
-							<li class="callQuestion">QUESTIONS? CALL:
-								<strong> (603) 5022-3176</strong>
+							<li class="callQuestion">EMAIL US:
+								<strong> itps.editorial.office@bbwpublisher.com</strong>
 							</li>
 						</ul>
 					</div>
@@ -170,5 +170,5 @@
 				<main class="pkp_structure_main col-xs-12 col-sm-12 col-md-12" role="main">
 		{else}
 			<div class="pkp_structure_content container">
-				<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-8" role="main">
+				<main class="pkp_structure_main col-xs-12 col-sm-10 col-md-10" role="main">
 		{/if}
