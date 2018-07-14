@@ -39,22 +39,6 @@
 		<header class="navbar navbar-default" id="headerNavigationContainer" role="banner">
 			<div class="innerHeaderWrp">
 				<div class="topHeader">
-					<div class="topSocial">
-						<ul>
-							<li>
-								<a href="https://www.facebook.com/bbwpublisher" class="fa fa-facebook" target="_blank"></a>
-							</li>
-							<li>
-								<a href="https://twitter.com/@bbwpublisher" class="fa fa-twitter" target="_blank"></a>
-							</li>
-							<li>
-								<a href="https://plus.google.com/+bbwpublisher" class="fa fa-google-plus" target="_blank"></a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/company/bbwpublisher" class="fa fa-linkedin" target="_blank"></a>
-							</li>
-						</ul>
-					</div>
 					<!--  <div class="socialBread">
 						<a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -62,32 +46,28 @@
 						<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 					</div> -->
 					<div class="topSocial">
-						<ul>
 							<!--   <li><a href="https://www.facebook.com/bbwpublisher" class="fa fa-facebook" target="_blank"></a></li>
 				<li><a href="https://twitter.com/@bbwpublisher" class="fa fa-twitter"  target="_blank"></a></li>
 				<li><a href="https://plus.google.com/+bbwpublisher" class="fa fa-google-plus"  target="_blank"></a></li>
 				<li><a href="https://www.linkedin.com/company/bbwpublisher" class="fa fa-linkedin"  target="_blank"></a></li> -->
-							<li class="callQuestion">EMAIL US:
-								<strong> itps.editorial.office@bbwpublisher.com</strong>
-							</li>
-						</ul>
+
 					</div>
 					{load_menu name="user" id="topMenuRight" ulClass="menu pull-right"}
 				</div>
 				<div class="mainNavigation">
 					<div class="navbar-header">
 						{if $displayPageHeaderLogo && is_array($displayPageHeaderLogo)}
-							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+							<a href="http://www.bbwpublisher.com" class="navbar-brand navbar-brand-logo">
 								<img src="{$publicFilesDir}/{$displayPageHeaderLogo.uploadName|escape:"url"}" {if $displayPageHeaderLogo.altText != ''}alt="{$displayPageHeaderLogo.altText|escape}"{else}alt="{translate key="common.pageHeaderLogo.altText"}"{/if}>
 							</a>
 						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_string($displayPageHeaderTitle)}
-							<a href="{$homeUrl}" class="navbar-brand">{$displayPageHeaderTitle}</a>
+							<a href="http://www.bbwpublisher.com" class="navbar-brand">{$displayPageHeaderTitle}</a>
 						{elseif $displayPageHeaderTitle && !$displayPageHeaderLogo && is_array($displayPageHeaderTitle)}
-							<a href="{$homeUrl}" class="navbar-brand navbar-brand-logo">
+							<a href="http://www.bbwpublisher.com" class="navbar-brand navbar-brand-logo">
 								<img src="{$publicFilesDir}/{$displayPageHeaderTitle.uploadName|escape:"url"}" alt="{$displayPageHeaderTitle.altText|escape}">
 							</a>
 						{else}
-							<a href="{$homeUrl}" class="navbar-brand">
+							<a href="http://www.bbwpublisher.com" class="navbar-brand">
 								<img src="{$baseUrl}/templates/images/structure/logo.png" alt="{$applicationName|escape}" title="{$applicationName|escape}" />
 							</a>
 						{/if}
@@ -121,7 +101,8 @@
 
 		{if $homepageImage.uploadName|escape:"url"}
 			<div class="custom-banner">
-				<img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}">
+				<!--img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}"-->
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
 			</div>
 		{elseif $currentUrl eq "http://206.189.90.227"}
 			<div class="custom-banner">
