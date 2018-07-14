@@ -101,8 +101,8 @@
 		{$currentUrl}----
 		{php}
 		{$segment = explode('/', trim(parse_url($currentUrl, PHP_URL_PATH), '/'));}
+		{echo $segment}
 		{/php}
-		{$segment}
 		{if $homepageImage.uploadName|escape:"url"}
 			<div class="custom-banner">
 				<!--img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}"-->
