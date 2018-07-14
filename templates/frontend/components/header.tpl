@@ -99,6 +99,7 @@
 			{/literal}
 		</script>
 		{$siteTitle}
+		{$currentJournal}
 		{if $homepageImage.uploadName|escape:"url"}
 			<div class="custom-banner">
 				<!--img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}"-->
