@@ -98,17 +98,12 @@
 			}
 			{/literal}
 		</script>
-		{$currentUrl} -
-		{$pageTitle} --
-		{$siteTitle}
-		{assign var="parts" value="/"|explode:$currentUrl}
+		{assign var="parts" value=$smarty.server.REQUEST_URI|explode:"/"}
 
-		- {$parts[0]} - {$parts[1]}
-		{if $currentUrl|strstr:"url"}
 		{if $homepageImage.uploadName|escape:"url"}
 			<div class="custom-banner">
 				<!--img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}"-->
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/{$parts[1]}-v2.png" alt="{$homepageImageAltText|escape}">
 			</div>
 		{elseif $currentUrl eq "http://206.189.90.227"}
 			<div class="custom-banner">
@@ -120,7 +115,7 @@
 			</div>
 		{else}
 			<div class="custom-banner">
-				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/any.png" alt="{$homepageImageAltText|escape}">
+				<img class="img-responsive" src="https://d3a47x03k839z8.cloudfront.net/{$parts[1]}-v2.png" alt="{$homepageImageAltText|escape}">
 			</div>
 		{/if}
 
