@@ -101,6 +101,10 @@
 		{$currentUrl} -
 		{$pageTitle} --
 		{$siteTitle}
+		{assign var="parts" value="/"|explode:$currentUrl}
+
+		- {$parts[0]} - {$parts[1]}
+		{if $currentUrl|strstr:"url"}
 		{if $homepageImage.uploadName|escape:"url"}
 			<div class="custom-banner">
 				<!--img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}"-->
