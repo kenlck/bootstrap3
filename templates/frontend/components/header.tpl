@@ -98,11 +98,8 @@
 			}
 			{/literal}
 		</script>
-		{$siteTitle}
-		{$pageTitle}
-		{$requestedPage}
-		{$currentUrl}
-		{$pagePath}
+		{$currentUrl}----
+		{explode('/', trim(parse_url($currentUrl, PHP_URL_PATH), '/'));}
 		{if $homepageImage.uploadName|escape:"url"}
 			<div class="custom-banner">
 				<!--img class="img-responsive" src="{$publicFilesDir}/{$homepageImage.uploadName|escape:"url"}" alt="{$homepageImageAltText|escape}"-->
